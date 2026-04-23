@@ -23,7 +23,7 @@ export const startSentOtpConsumer = async()=>{
                 try {
                     const {to,subject,body} = JSON.parse(msg.content.toString());
                     const transpoter = nodemailer.createTransport({
-                        host:"smtp.gamil.com",
+                        host:"smtp.gmail.com",
                         port: 465,
                         auth:{
                             user:process.env.USER,
